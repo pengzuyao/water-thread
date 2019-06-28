@@ -1,7 +1,7 @@
 package com.water.thread.wblClass04;
 
-import com.many.thread.annotations.NotThreadSafe;
-import com.many.thread.annotations.ThreadSafe;
+
+import com.water.thread.annotations.NotThreadSafe;
 
 /*
  * @Description:

@@ -1,6 +1,8 @@
 package com.water.thread.wblClass08;
 
-import com.many.thread.annotations.ThreadSafe;
+
+
+import com.water.thread.annotations.ThreadSafe;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -11,6 +13,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * Author: pengzuyao
  * Time: 2019-06-24
  */
+@ThreadSafe
 public class C08BlockedQueue<T> {
 
     /**

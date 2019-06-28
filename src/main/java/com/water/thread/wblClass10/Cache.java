@@ -1,7 +1,7 @@
 package com.water.thread.wblClass10;
 
 import com.google.common.collect.Maps;
-import com.many.thread.annotations.ThreadSafe;
+import com.water.thread.annotations.ThreadSafe;
 
 import java.util.Map;
 import java.util.concurrent.locks.Lock;

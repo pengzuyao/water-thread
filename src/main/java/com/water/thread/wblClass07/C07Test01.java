@@ -1,6 +1,7 @@
 package com.water.thread.wblClass07;
 
-import com.many.thread.annotations.NotThreadSafe;
+
+import com.water.thread.annotations.NotThreadSafe;
 
 /**
  * Destription:

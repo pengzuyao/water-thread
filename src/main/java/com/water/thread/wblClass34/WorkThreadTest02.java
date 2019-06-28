@@ -1,6 +1,6 @@
 package com.water.thread.wblClass34;
 
-import com.many.thread.annotations.NotThreadSafe;
+import com.water.thread.annotations.NotThreadSafe;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,6 +1,8 @@
 package com.water.thread.wblClass06;
 
-import com.many.thread.annotations.ThreadSafe;
+
+
+import com.water.thread.annotations.ThreadSafe;
 
 import java.util.List;
 
