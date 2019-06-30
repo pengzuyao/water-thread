@@ -11,8 +11,7 @@ import java.util.concurrent.*;
  * Time: 2019-06-28
  */
 public class Logger {
-
-
+    
     enum LEVEL{
         INFO ,ERROR
     }
@@ -20,7 +19,10 @@ public class Logger {
     class LogMsg{
         LEVEL level;
         String msg;
-        LogMsg(LEVEL lev , String msg){}
+        LogMsg(LEVEL level , String msg){
+            this.level = level;
+            this.msg = msg;
+        }
 
         @Override
         public String toString() {
