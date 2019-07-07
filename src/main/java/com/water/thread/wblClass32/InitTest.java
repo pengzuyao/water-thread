@@ -7,6 +7,7 @@ package com.water.thread.wblClass32;
  */
 public class InitTest {
 
+
     boolean inited = false;
     synchronized void init(){
         if (inited){
@@ -16,4 +17,5 @@ public class InitTest {
         //doInit()
         inited = true;
     }
+
 }

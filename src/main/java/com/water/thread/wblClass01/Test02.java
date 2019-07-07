@@ -27,6 +27,5 @@ public class Test02 {
      * 1、理想情况：分配一块内存M;
      * 2、在内存M上初始化Test02对象
      * 3、然后M的地址复值给instance变量
-     *
      */
 }

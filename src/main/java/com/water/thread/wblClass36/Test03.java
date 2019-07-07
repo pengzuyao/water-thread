@@ -15,20 +15,26 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Test03 {
 
     private BlockingQueue<Integer> bq = new LinkedBlockingQueue(10);
+
     //生产者
     public class Producer implements Runnable{
         @Override
         public void run() {
             while (true){
                 try {
-                    Thread.sleep(new Random().nextInt(5));
-                    bq.put(1);
-                    System.out.println(Thread.currentThread().getName() + "生产者生产，目前总共有" + bq.size());
+                    Thread.sleep(1);
+                    bq.put(produce());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
         }
+
+        public Integer produce(){
+            System.out.println(Thread.currentThread().getName() + "生产者生产，目前总共有" + bq.size());
+            return 1;
+        }
+
     }
 
     //消费者
@@ -37,13 +43,16 @@ public class Test03 {
         public void run() {
             while (true) {
                 try {
-                    Thread.sleep(new Random().nextInt(5));
-                    bq.take();
-                    System.out.println(Thread.currentThread().getName() + "消费者消费，目前总共有" + bq.size());
+                    Thread.sleep(3);
+                    consume(bq.take());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
+        }
+
+        public void consume(Integer integer){
+            System.out.println(Thread.currentThread().getName() + "消费者消费，目前总共有" + bq.size());
         }
     }
 
@@ -58,7 +67,7 @@ public class Test03 {
 
        th1.start();
        th2.start();
-       //th3.start();
+       th3.start();
     }
 
 }
